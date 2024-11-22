@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Name"
+                android:textSize="16sp"
+                android:textColor="@color/md_theme_onBackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="start|center_vertical">
+                <TextView
+                    android:id="@+id/txtTotalVotes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23423"
+                    android:textSize="14sp"
+                    android:textColor="@color/md_theme_primary"
+                    android:alpha="0.6"/>
+
+                <ProgressBar
+                    android:id="@+id/progTotalVotes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:progressTint="@color/md_theme_primary"
+                    android:indeterminateTintMode="src_atop"
+                    android:indeterminateTint="@color/md_theme_primary"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:indeterminate="false"
+                    android:progress="25"
+                    android:max="100"
+                    android:layout_marginStart="8dp"
+                    android:alpha="0.6"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtProgram"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate Program"
+                android:textSize="14sp"
+                android:textColor="@color/md_theme_onBackground"
+                android:alpha="0.6"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
